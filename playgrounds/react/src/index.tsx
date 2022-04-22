@@ -1,10 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Color, Spacing } from "@ds/react";
+import { Margin, Text, Select } from "@ds/react";
 import "@ds/scss/lib/Utilities.css";
+import "@ds/scss/lib/Text.css";
+import "@ds/scss/lib/Margin.css";
+import "@ds/scss/lib/Select.css";
 
 ReactDOM.render(
-  <Color hexCode="#000" width={Spacing.sm} height={Spacing.sm} />,
+  <div>
+    <Margin left space="none">
+      <Select options={[{label:"2erw", value:"hoal"},{label:"fdsa", value:"hofdsaal"}]} renderOption={({option})=><p>{option.label}</p>}/>
+    </Margin>
+  </div>,
   document.querySelector("#root")
 );
