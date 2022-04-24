@@ -33028,7 +33028,7 @@ const getNextOptionIndex = (currentIndex, options) => {
 
 const Select = ({
   options = [],
-  label = 'Please select an option ...',
+  label = "Please select an option ...",
   onOptionSelected: handler,
   renderOption
 }) => {
@@ -33047,6 +33047,8 @@ const Select = ({
     setSelectedIndex(optionIndex);
     setIsOpen(false);
   };
+
+  console.log(options);
 
   const onLabelClick = () => {
     setIsOpen(!isOpen);
@@ -33108,20 +33110,20 @@ const Select = ({
   };
 
   return _react.default.createElement("div", {
-    className: 'dse-select'
+    className: "dse-select"
   }, _react.default.createElement("button", {
-    "data-testid": 'DseSelectButton',
+    "data-testid": "DseSelectButton",
     onKeyDown: onButtonKeyDown,
-    "aria-controls": 'dse-select-list',
+    "aria-controls": "dse-select-list",
     "aria-haspopup": true,
     "aria-expanded": isOpen ? true : undefined,
     ref: labelRef,
-    className: 'dse-select__label',
+    className: "dse-select__label",
     onClick: () => onLabelClick()
   }, _react.default.createElement(_Text.default, null, selectedOption === null ? label : selectedOption.label), _react.default.createElement("svg", {
-    className: `dse-select__caret ${isOpen ? 'dse-select__caret--open' : 'dse-select__caret--closed'}`,
-    width: '1rem',
-    height: '1rem',
+    className: `dse-select__caret ${isOpen ? "dse-select__caret--open" : "dse-select__caret--closed"}`,
+    width: "1rem",
+    height: "1rem",
     fill: "none",
     strokeLinecap: "round",
     strokeLinejoin: "round",
@@ -33131,13 +33133,13 @@ const Select = ({
   }, _react.default.createElement("path", {
     d: "M19 9l-7 7-7-7"
   }))), _react.default.createElement("ul", {
-    role: 'menu',
+    role: "menu",
     "aria-hidden": isOpen ? undefined : false,
-    id: 'dse-select-list',
+    id: "dse-select-list",
     style: {
       top: overlayTop
     },
-    className: `dse-select__overlay ${isOpen ? 'dse-select__overlay--open' : ''}`
+    className: `dse-select__overlay ${isOpen ? "dse-select__overlay--open" : ""}`
   }, options.map((option, optionIndex) => {
     const isSelected = selectedIndex === optionIndex;
     const isHighlighted = highlightedIndex === optionIndex;
@@ -33149,16 +33151,16 @@ const Select = ({
       getOptionRecommendedProps: (overrideProps = {}) => {
         return {
           ref,
-          role: 'menuitemradio',
-          'aria-label': option.label,
-          'aria-checked': isSelected ? true : undefined,
+          role: "menuitemradio",
+          "aria-label": option.label,
+          "aria-checked": isSelected ? true : undefined,
           onKeyDown: onOptionKeyDown,
           tabIndex: isHighlighted ? -1 : 0,
           onMouseEnter: () => highlightOption(optionIndex),
           onMouseLeave: () => highlightOption(null),
           className: `dse-select__option
-                                ${isSelected ? 'dse-select__option--selected' : ''}
-                                ${isHighlighted ? 'dse-select__option--highlighted' : ''}
+                                ${isSelected ? "dse-select__option--selected" : ""}
+                                ${isHighlighted ? "dse-select__option--highlighted" : ""}
                             `,
           key: option.value,
           onClick: () => onOptionSelected(option, optionIndex),
@@ -33173,8 +33175,8 @@ const Select = ({
 
     return _react.default.createElement("li", { ...renderOptionProps.getOptionRecommendedProps()
     }, _react.default.createElement(_Text.default, null, option.label), isSelected ? _react.default.createElement("svg", {
-      width: '1rem',
-      height: '1rem',
+      width: "1rem",
+      height: "1rem",
       fill: "none",
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -33348,11 +33350,7 @@ _reactDom.default.render(_react.default.createElement("div", null, _react.defaul
   }, {
     label: "fdsa",
     value: "hofdsaal"
-  }],
-  renderOption: function renderOption(_ref) {
-    var option = _ref.option;
-    return _react.default.createElement("p", null, option.label);
-  }
+  }]
 }))), document.querySelector("#root"));
 },{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","@ds/react":"../../../node_modules/@ds/react/lib/index.js","@ds/scss/lib/Utilities.css":"../../../node_modules/@ds/scss/lib/Utilities.css","@ds/scss/lib/Text.css":"../../../node_modules/@ds/scss/lib/Text.css","@ds/scss/lib/Margin.css":"../../../node_modules/@ds/scss/lib/Margin.css","@ds/scss/lib/Select.css":"../../../node_modules/@ds/scss/lib/Select.css"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -33382,7 +33380,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62388" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

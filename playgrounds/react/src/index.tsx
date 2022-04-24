@@ -10,7 +10,12 @@ import "@ds/scss/lib/Select.css";
 ReactDOM.render(
   <div>
     <Margin left space="none">
-      <Select options={[{label:"2erw", value:"hoal"},{label:"fdsa", value:"hofdsaal"}]} renderOption={({option})=><p>{option.label}</p>}/>
+      <Select
+        options={[
+          { label: "2erw", value: "hoal" },
+          { label: "fdsa", value: "hofdsaal" },
+        ]}
+      />
     </Margin>
   </div>,
   document.querySelector("#root")
