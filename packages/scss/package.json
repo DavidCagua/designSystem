@@ -6,6 +6,10 @@
   "dependencies": {
     "normalize-scss": "^7.0.1"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
     "lint": "stylelint ./**/*.scss",
     "lint:fix": "yarn lint --fix",
