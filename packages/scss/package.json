@@ -1,5 +1,5 @@
 {
-  "name": "@ds/scss",
+  "name": "@davidcaguads/scss",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
@@ -34,5 +34,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "84ec90702386fe3d1834d6a0f68180ac44f9e317"
 }
