@@ -14,8 +14,11 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
     "lerna": "^4.0.0"
   },
   "scripts": {
@@ -26,5 +29,15 @@
     "commit": "yarn git-cz",
     "test:chromatic": "yarn lerna run test:chromatic",
     "build:storybook": "yarn build && yarn lerna run build-storybook"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
