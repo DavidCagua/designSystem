@@ -1,5 +1,5 @@
-import React from 'react';
-import { Spacing } from '@ds/foundation';
+import React from "react";
+import { Spacing } from "@davidcaguads/foundation";
 export interface ColorProps {
     hexCode: string;
     width?: keyof typeof Spacing;
