@@ -100,7 +100,7 @@
  *
  */
 .dse-button-container {
-  background: red;
+  background: blue;
   color: var(--dse-btn-primary-color, #fff);
   display: flex;
   padding: 0.25rem;
