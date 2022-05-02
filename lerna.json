@@ -1,12 +1,12 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "0.0.4",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "stream": true,
   "command": {
-    "conventionalCommits": true
+    "publish": {
+      "conventionalCommits": true
+    }
   }
 }
