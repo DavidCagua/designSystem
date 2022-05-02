@@ -8,7 +8,7 @@ const spaces: {
   lg: "lg";
   xl: "xl";
   xxl: "xxl";
-  xxxl: "xxxl";
+  xxxl: "xxl";
 } = {
   none: "none",
   xxxs: "xxxs",
