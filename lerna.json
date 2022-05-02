@@ -6,7 +6,7 @@
   "stream": true,
   "command": {
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommts": true
     }
   }
 }
