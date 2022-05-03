@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentMeta } from "@storybook/react";
-import "@ds/scss/lib/Utilities.css";
+import "@davidcaguads/scss/lib/Utilities.css";
 import Color from "./Color";
 
 export default {
@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof Color>;
 import { text, select } from "@storybook/addon-knobs";
 
-import { Spacing } from "@ds/foundation";
+import { Spacing } from "@davidcaguads/foundation";
 export const Common = () => <Color hexCode="pink" />;
 export const CustomDimensions = () => (
   <Color

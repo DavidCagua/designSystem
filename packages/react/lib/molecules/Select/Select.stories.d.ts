@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import "@ds/scss/lib/Select.css";
+import "@davidcaguads/scss/lib/Select.css";
 declare const _default: {
     title: string;
     decorators: import("@storybook/csf").DecoratorFunction<import("@storybook/csf").AnyFramework, import("@storybook/csf").Args>[];
